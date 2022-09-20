@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+<label for="">Enter First number</label>
+<input type="number" id="num1"><br><br>
+
+<label for="">Enter Second number</label>
+<input type="number" id="num2"><br><br>
+
+<button type="submit" onclick="addition(); return false;">Add</button>
+<button type="submit" onclick="subtraction(); return false;">Subtract</button>
+<button type="submit" onclick="multiplication(); return false;">Multiply</button>
+<button type="submit" onclick="division(); return false;" >Divide</button>
+
+
+    </form>
+<h1 id="result"></h1>
+    <script>
+        function addition () {
+            let a =  +document.querySelector("#num1").value;
+           
+            let b =  +document.querySelector("#num2").value;
+            
+          let sum = a+b;
+          document.querySelector("#result").innerHTML = "result : " + sum;
+        }
+
+        function subtraction() {
+            let p =  +document.querySelector("#num1").value;
+           
+            let q =  +document.querySelector("#num2").value;
+            
+          let subtract = p - q;
+
+          document.querySelector("#result").innerHTML = "result : " + subtract;
+        }
+
+
+        function multiplication() {
+            let x =  +document.querySelector("#num1").value;
+           
+            let y =  +document.querySelector("#num2").value;
+            
+          let multiply = x * y;
+
+          document.querySelector("#result").innerHTML = "result : " + multiply;
+        }
+
+        function division() {
+            let s =  +document.querySelector("#num1").value;
+           
+            let t =  +document.querySelector("#num2").value;
+            
+          let divide = s / t;
+
+          document.querySelector("#result").innerHTML = "result : " + divide;
+        }
+    </script>
+</body>
+</html>
